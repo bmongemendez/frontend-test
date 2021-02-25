@@ -1,0 +1,134 @@
+/* LOADING */
+.spinner-container {
+	background: #f8f8f8;
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.spinner {
+	padding-top: 16px;
+	height: 124px;
+	width: 124px;
+}
+
+.loading-text {
+	font-size: 18px;
+}
+
+/* RESULTS (FIRST SECTION) */
+
+.results-container {
+	min-height: 307px;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	background-color: var(--color__primary);
+}
+
+.results__text {
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 20px;
+	line-height: 28px;
+	color: #4a4a4a;
+}
+
+.results__card {
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	border-radius: 30px !important; /*Overrides the Bootstrap default */
+	padding: 25px 15px;
+}
+.card__image {
+	height: 63px;
+	width: 63px;
+	background-color: var(--color__primary);
+	padding: 15px;
+	margin-right: 10px;
+}
+
+.card__h1 {
+	font-size: 32px;
+}
+
+.card__h2 {
+	font-size: 20px;
+}
+
+.card__text {
+	font-size: 16px;
+	color: #000000;
+	line-height: 24px;
+}
+
+.card__phone {
+	color: var(--color__primary);
+}
+
+.card__info-container {
+	padding-left: 0 !important; /*Overrides the Bootstrap default */
+}
+
+/* Margin bottom to all childs with the exception of the last one */
+.card__info-container:not(.card__info-container.card__info-container--last) {
+	margin-bottom: 15px;
+}
+
+.no-results-container {
+	min-height: 307px;
+	background: #f8f8f8;
+	height: 100%;
+	flex: 1 1 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.no-results-text {
+	font-size: 18px;
+	color: #4a4a4a;
+	line-height: 28px;
+}
+
+/* Media queries of results page */
+@media screen and (min-width: 768px) {
+	.search-container--results {
+		min-height: 468px;
+	}
+	.results__text {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+	.results__card {
+		padding: 25px 30px;
+	}
+	.no-results-container {
+		min-height: 447px;
+	}
+	.no-results-text {
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.card__text {
+		font-size: 18px;
+	}
+	.card__h2 {
+		font-size: 22px;
+	}
+	.results__card {
+		padding: 40px;
+	}
+	.no-results-header1 {
+		font-size: 52px;
+	}
+	.no-results-text {
+		font-size: 24px;
+	}
+}

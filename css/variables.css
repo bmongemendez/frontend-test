@@ -1,0 +1,11 @@
+/* Here I set all the variables to make a concistent design */
+
+:root {
+	/* COLORS */
+	--color__primary: #004a80;
+	--color__secondary: #f6bc25;
+	--color__tertiary: #e6e6e6;
+	--color__light: #ffffff;
+	--color__dark: #000000;
+	--color__alert: #dc0015;
+}

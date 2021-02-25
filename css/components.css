@@ -1,0 +1,24 @@
+/* Here I set all my custom reusable classes as components */
+
+/* Getting the Lato font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+.font-helv {
+	font-family: HelveticaNeue-Bold, Helvetica, sans-serif;
+}
+
+.font-lato {
+	font-family: Lato-Bold, Lato, sans-serif;
+}
+
+.text-blue {
+	color: var(--color__primary);
+}
+
+.text-yellow {
+	color: var(--color__secondary);
+}
+
+.text-dark {
+	color: #000000 !important;
+}
